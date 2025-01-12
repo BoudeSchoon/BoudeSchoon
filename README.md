@@ -1,10 +1,10 @@
-# react-native-webview-js-context [![npm version](https://badge.fury.io/js/react-native-webview-js-context.svg)](http://badge.fury.io/js/react-native-webview-js-context)
+# BoudeSchoon
 
 Interactive JavaScript between a UIWebView and React Native.
 
 **Example:** Google Charts used to render a chart (base64 encoded image) in a `<Image />` component
 
-<img width="375" src="http://shayne.github.io/react-native-webview-js-context/readme-files/google-charts-screenshot.png?999" />
+<img width="375" src="http://shayne.github.io/BoudeSchoon/readme-files/google-charts-screenshot.png?999" />
 
 ```javascript
 const GC_HTML = `
@@ -55,7 +55,7 @@ const CHART_JS = `
 
   resolve(chart.getImageURI()); /* <--- resolve() is called by RNWebViewJSContext */`;
 
-import WebViewJSContext from 'react-native-webview-js-context';
+import WebViewJSContext from 'BoudeSchoon';
 
 class RNCharts {
   state: { imageUri: null };
@@ -87,17 +87,17 @@ class RNCharts {
 
 ## Usage
 
-First you need to install react-native-webview-js-context:
+First you need to install BoudeSchoon:
 
 ```javascript
-npm install react-native-webview-js-context --save
+npm install BoudeSchoon --save
 ```
 
 
 ## `iOS`
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-webview-js-context` ➜ `ios` and add `RNWebViewJSContext.xcodeproj`
+2. Go to `node_modules` ➜ `BoudeSchoon` ➜ `ios` and add `RNWebViewJSContext.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNWebViewJSContext.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
@@ -107,15 +107,15 @@ npm install react-native-webview-js-context --save
 
 ```gradle
 ...
-include ':react-native-webview-js-context'
-project(':react-native-webview-js-context').projectDir = new File(settingsDir, '../node_modules/react-native-webview-js-context/android')
+include ':BoudeSchoon'
+project(':BoudeSchoon').projectDir = new File(settingsDir, '../node_modules/BoudeSchoon/android')
 ```
 * `android/app/build.gradle`
 
 ```gradle
 dependencies {
 	...
-	compile project(':react-native-webview-js-context')
+	compile project(':BoudeSchoon')
 }
 ```
 
